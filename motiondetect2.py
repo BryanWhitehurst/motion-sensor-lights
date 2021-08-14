@@ -11,7 +11,7 @@ import keys
 
 def toggle(turnOn):
     data = json.dumps({"on": turnOn})
-    requests.put('http://'+keys.IP_ADDR()+'/api/'+keys.API_KEY()+'/groups/1/action', data=data)
+    requests.put('http://'+keys.IP_ADDR+'/api/'+keys.API_KEY()+'/groups/1/action', data=data)
 
 
 cap = cv2.VideoCapture(0) #use default webcam

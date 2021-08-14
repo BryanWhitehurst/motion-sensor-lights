@@ -71,6 +71,6 @@ while True:
                 state = "off"
 
             time.sleep(7) #wait 7 seconds after detecting motion to turn lights on
-            requests.put('http://'+keys.IP_ADDR()+'/api/'+keys.API_KEY()+'/groups/1/action', data=data)
+            requests.put('http://'+keys.IP_ADDR+'/api/'+keys.API_KEY+'/groups/1/action', data=data)
             time.sleep(30) #30 second cooldown before checking for motion again
             break 
